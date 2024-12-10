@@ -1,21 +1,22 @@
 # AdventOfCode24
 
-**TODO: Add description**
+Code written in Elixir and compiled using `mix`.
 
-## Installation
+## Running the code
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `advent_of_code_24` to your list of dependencies in `mix.exs`:
+Requires Erlang and Elixir to be installed.
 
-```elixir
-def deps do
-  [
-    {:advent_of_code_24, "~> 0.1.0"}
-  ]
-end
+On the command line run:
+
+```sh
+cd advent_of_code_24
+mix compile
+iex.bat -S mix
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/advent_of_code_24>.
+Then in the integrated Elixir terminal run each days module:
 
+```ex
+iex> Day1.run()
+{:ok, "the answer"}
+```
